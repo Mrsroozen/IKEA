@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ddaef625fe.js" crossorigin="anonymous"></script>
+    <title>Registrering - IKEA</title>
+    <link rel="stylesheet" href="ikea.css" />
+  </head>
+
+  <body>
+    
+    <div class="mainGrid">
+      <header>
+        <img src="./assets/600dae14516067000439acac.png" alt="ikea-logo" class="logoImage"/>
+      </header>
+
+      <main class="innerContainer">
+        <div class="imagegallery">
+          <h1>Bli <span>IKEA Family</span><br>medlem</h1>
+          <br/>
+          <p>Är du redan medlem? <a href="">Logga in</a></p>
+          <br/>
+          <br/>
+          <img src="./assets/blomma.jpg" alt="blomma" class="blomma"/>
+          <img src="./assets/fest.jpg" alt="fest" />
+          <img src="./assets/kaffe.jpg" alt="kaffe" />
+          <img src="./assets/kompisar.jpg" alt="kompisar" />
+          <img src="./assets/mat.jpg" alt="mat" />
+          <img src="./assets/mys.jpg" alt="mys" />
+          <img src="./assets/oldies.jpg" alt="oldies" />
+          <img src="./assets/pyssel.jpg" alt="pyssel" />
+          <img src="./assets/kaffetjej.jpg" alt=kaffetjej"" />
+        </div>
+
+        <form action="https://httpbin.org/anything" method="post">
+
+          <p class="formtext">
+            Vad kul att du vill skapa ett konto hos oss! Välj om du vill bli
+            IKEA Family medlem, helt utan kostnad. Annars skapar du ett <br> enkelt
+            IKEA konto utan några extra förmåner.
+          </p>
+
+          <div class="checkbuttongroup">
+            <input type="radio" name="radio" id="buttonYes" value="yes" />
+            <div class="labelbox">
+              <label for="buttonYes">Ja, jag vill bli medlem och ta del av förmåner, medlemspriser
+                och mycket mer! Mer information</label>
+            </div>
+          </div>
+
+          <div class="checkbuttongroup">
+            <input type="radio" name="radio" id="buttonNo" value="no"/>
+            <div class="labelbox">
+              <label for="buttonNo">Nej, jag vill inte bli medlem, utan bara skapa ett IKEA konto
+              utan extra förmåner. Mer information</label>
+            </div>
+          </div>
+
+          <br>
+
+          <label for="securitynumber">Personnummer</label>
+          <input type="text" name="personnummer" id="securitynumber" />
+          <label for="firstName">Förnamn</label>
+          <input type="text" name="förnamn" id="firstName" />
+          <label for="lastName">Efternamn</label>
+          <input type="text" name="efternamn" id="lastName" />
+          <label for="warehouse">Önskat varuhus</label>
+
+          <select name="önskatvaruhus" id="warehouse">
+            <option value=""></option>
+            <option value="Stockholm">Stockholm</option>
+            <option value="Göteborg">Göteborg</option>
+            <option value="Malmö">Malmö</option>
+          </select>
+
+          <label for="phonenumber">Telefonnummer</label>
+          <input type="tel" name="telefonnummer" id="phonenumber"/>
+          <label for="e-mail">E-postadress</label>
+          <input type="email" name="e-postadress" id="e-mail"/>
+          <label for="password1">Lösenord</label>
+          <input type="password" name="password" id="password1"/>
+
+            <div class="checkbuttongroup">
+                <input type="checkbox" name="checkbox" id="integritetspolicy" required/>
+                 <div class="labelbox">
+                <label for="integritetspolicy">Jag har läst och förstått <a href="">Integritetspolicy.</a></label>
+                </div>
+            </div>
+
+            <div class="checkbuttongroup">
+                <input type="checkbox" name="checkbox" id="användarvillkor" required/>
+                <div class="labelbox">
+                <label for="användarvillkor">Jag har läst och accepterar <a href="">Användarvillkor.</a></label>
+                </div>
+            </div>
+
+            <div class="checkbuttongroup">
+                <input type="checkbox" name="checkbox" id="erbjudanden" />
+                <div class="labelbox">
+                <label for="erbjudanden">Jag vill få erbjudanden, överraskningar och heminrednings inspiration från IKEA.</label>
+                </div>
+            </div>
+
+          <button type="submit">Gå vidare</button>
+
+        </form>
+      </main>
+
+      <footer>
+        IKEA.se - Cookiepolicy och Integritetspolicy <br>
+        © Inter IKEA Systems B.V. 1999-2023
+      </footer>
+    </div>
+
+  </body>
+</html>
